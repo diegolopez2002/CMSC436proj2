@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/statusTextView"
+        style="@style/GameStyle"
+        android:layout_width="49dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="PLAY" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/statusTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cardButton1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            />
+
+        <Button
+            android:id="@+id/cardButton2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            />
+
+        <Button
+            android:id="@+id/cardButton3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            />
+
+        <Button
+            android:id="@+id/cardButton4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/totalTextView"
+        style="@style/GameStyle"
+        android:layout_width="39dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardButton1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/dealButton"
+        style="@style/GameStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totalTextView"
+        android:layout_marginTop="159dp"
+        android:text="DEAL" />
+
+</RelativeLayout>
